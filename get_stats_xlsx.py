@@ -19,8 +19,6 @@ selected_parks = [park for park in parks if 'NP' in park["Text"] and "NPRES" not
 national_parks = {}
 for park in selected_parks:
     national_parks[park['Text']] = park['Value']
-    
-# national_parks = {'Acadia NP (ACAD)': 'ACAD', 'Arches NP (ARCH)': 'ARCH', 'Badlands NP (BADL)': 'BADL'}
 
 def retry_until_clickable(driver, by, value, max_retries=5):
     for retry in range(max_retries):
@@ -75,8 +73,8 @@ for park_key in national_parks.values():
     time.sleep(10)
     
     # Rename the downloaded file to use the park code as the file name
-    old_filename = "C:\\Users\entsa\Downloads\Summary of Visitor Use By Month and Year (1979 - Last Calendar Year).xlsx"
-    new_filename = f"C:\\Users\entsa\Downloads\{park_key}.xlsx"
+    old_filename = "C:\\REPLACE\WITH\YOUR\PATH\Summary of Visitor Use By Month and Year (1979 - Last Calendar Year).xlsx"
+    new_filename = f"C:\\REPLACE\WITH\YOUR\PATH\{park_key}.xlsx"
     if os.path.exists(old_filename):
         # Rename the downloaded file to use the park code as the file name
         try:
