@@ -1,4 +1,4 @@
-# Exploring U.S. National-Parks: Visitor and Accommodation Trends
+# Exploring U.S. National Parks: Visitor and Accommodation Trends
 This project explores visitor and accommodation trends across U.S. national parks, utilizing data from various sources.
 
 ## Tableau Workbook (Story)
